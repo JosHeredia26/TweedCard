@@ -1,6 +1,7 @@
 import avatar from "../static/images/avatar.png";
 import gallery from "../static/images/gallery.png";
 import heart from "../static/icons/heart.svg";
+import styled from "@emotion/styled";
 
 function Card() {
   return (
