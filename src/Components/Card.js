@@ -1,7 +1,9 @@
 import avatar from "../static/images/avatar.png";
 import gallery from "../static/images/gallery.png";
 import heart from "../static/icons/heart.svg";
+import pinkheart from "../static/icons/pinkheart.svg";
 import styled from "@emotion/styled";
+import { useState } from "react";
 
 const Container = styled.div`
   display: flex;
@@ -140,6 +142,11 @@ const Likes = styled.p`
 `;
 
 function Card() {
+  const [color, setColor] = useState(false);
+  function colorize() {
+    setColor(!color);
+  }
+
   return (
     <Container>
       <Avatar src={avatar} alt="" />
@@ -168,7 +175,7 @@ function Card() {
           </LinkDescription>
         </LinkContainer>
         <LikeContainer>
-          <img src={heart} alt="" />
+          <img src={color ? pinkheart : heart} alt="" onClick={colorize} />
           <Likes>250</Likes>
         </LikeContainer>
       </CardInfo>
