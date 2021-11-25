@@ -18,6 +18,11 @@ function App() {
           a {
             text-decoration: none;
           }
+          html,
+          body,
+          #root {
+            height: 100%;
+          }
         `}
       />
       <div className="App">
