@@ -143,8 +143,10 @@ const Likes = styled.p`
 
 function Card() {
   const [color, setColor] = useState(false);
+  const [likes, setLikes] = useState(250);
   function colorize() {
     setColor(!color);
+    setLikes(color ? likes - 1 : likes + 1);
   }
 
   return (
@@ -158,10 +160,15 @@ function Card() {
           </UserData>
           <Comment>
             Los retos de esta semana de /Proyectos son totalmente gratis, crea
-            una sección de pricing y una galería de fotos
-            https://leonidasesteban.com/proyectos/cards-precios
-            https://leonidasesteban.com/proyectos/grid-gallery estos los puedes
-            hacer en 100% solo con HTML y CSS
+            una sección de pricing y una galería de fotos &nbsp;
+            <a href="leonidasesteban.com/proyectos/cards-precios">
+              https://leonidasesteban.com/proyectos/cards-precios
+            </a>
+            &nbsp;{" "}
+            <a href="leonidasesteban.com/proyectos/grid-gallery">
+              https://leonidasesteban.com/proyectos/grid-gallery
+            </a>
+            &nbsp;estos los puedes hacer en 100% solo con HTML y CSS
           </Comment>
         </CommentContainer>
         <LinkContainer>
@@ -176,7 +183,7 @@ function Card() {
         </LinkContainer>
         <LikeContainer>
           <img src={color ? pinkheart : heart} alt="" onClick={colorize} />
-          <Likes>250</Likes>
+          <Likes style={{ color: color ? "#F72381" : "" }}>{likes}</Likes>
         </LikeContainer>
       </CardInfo>
     </Container>

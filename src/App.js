@@ -17,6 +17,7 @@ function App() {
           }
           a {
             text-decoration: none;
+            color: #2797dd;
           }
           html,
           body,
