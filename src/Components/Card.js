@@ -2,8 +2,6 @@ import avatar from "../static/images/avatar.png";
 import gallery from "../static/images/gallery.png";
 import heart from "../static/icons/heart.svg";
 import pinkheart from "../static/icons/pinkheart.svg";
-import styled from "@emotion/styled";
-import { useState } from "react";
 import {
   CardInfo,
   CommentContainer,
@@ -15,6 +13,7 @@ import {
 } from "../Styles/Containers";
 import { GreyText, WhiteText } from "../Styles/Texts";
 import { Avatar, Wallpaper } from "../Styles/Images";
+import { useState } from "react";
 
 function Card() {
   const [color, setColor] = useState(false);
