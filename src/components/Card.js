@@ -11,8 +11,14 @@ import {
   LinkDescription,
   UserData,
 } from "../styles/Containers";
-import { GreyText, WhiteText } from "../styles/Texts";
-import { Avatar, Wallpaper } from "../styles/Images";
+import {
+  Description,
+  GreyText,
+  LinkTitle,
+  Page,
+  WhiteText,
+} from "../styles/Texts";
+import { Avatar, Wallpaper, Icon } from "../styles/Images";
 import { useState } from "react";
 
 function Card() {
@@ -50,15 +56,16 @@ function Card() {
         <LinkContainer>
           <Wallpaper src={gallery} alt="" />
           <LinkDescription>
-            <WhiteText>Grid Gallery</WhiteText>
-            <GreyText>
+            <LinkTitle>Grid Gallery</LinkTitle>
+            <Description>
               Practica tus habilidades de Grid CSS con este ejercicio de las
               capitales del mundo.
-            </GreyText>
+            </Description>
+            <Page>joseheredia.com</Page>
           </LinkDescription>
         </LinkContainer>
         <LikeContainer>
-          <img src={color ? pinkheart : heart} alt="" onClick={colorize} />
+          <Icon src={color ? pinkheart : heart} alt="" onClick={colorize} />
           <GreyText style={{ color: color ? "#F72381" : "" }}>{likes}</GreyText>
         </LikeContainer>
       </CardInfo>
