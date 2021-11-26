@@ -3,6 +3,7 @@
 TweedCard is a card with the style of one of the most popular social networks.
 
 ![Project Image](src/static/images/project-image.PNG)
+![Project Image Responsive](src/static/images/project-image-responsive.PNG)
 
 This project was extracted from [LeonidasEsteban.com](https://leonidasesteban.com/)
 </br>
