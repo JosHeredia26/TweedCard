@@ -10,9 +10,9 @@ import {
   LinkContainer,
   LinkDescription,
   UserData,
-} from "../Styles/Containers";
-import { GreyText, WhiteText } from "../Styles/Texts";
-import { Avatar, Wallpaper } from "../Styles/Images";
+} from "../styles/Containers";
+import { GreyText, WhiteText } from "../styles/Texts";
+import { Avatar, Wallpaper } from "../styles/Images";
 import { useState } from "react";
 
 function Card() {
@@ -30,19 +30,19 @@ function Card() {
         <CommentContainer>
           <UserData>
             <WhiteText style={{ fontWeight: "bold" }}>
-              LeonidasEsteban.css
+              JoseHeredia.css
             </WhiteText>
-            <GreyText>@LeonidasEsteban·2h</GreyText>
+            <GreyText>@JoseHeredia·2h</GreyText>
           </UserData>
           <WhiteText>
             Los retos de esta semana de /Proyectos son totalmente gratis, crea
             una sección de pricing y una galería de fotos &nbsp;
-            <a href="leonidasesteban.com/proyectos/cards-precios">
-              https://leonidasesteban.com/proyectos/cards-precios
+            <a href="joseheredia.com/proyectos/cards-precios">
+              https://joseheredia.com/proyectos/cards-precios
             </a>
             &nbsp;{" "}
-            <a href="leonidasesteban.com/proyectos/grid-gallery">
-              https://leonidasesteban.com/proyectos/grid-gallery
+            <a href="joseheredia.com/proyectos/grid-gallery">
+              https://joseheredia.com/proyectos/grid-gallery
             </a>
             &nbsp;estos los puedes hacer en 100% solo con HTML y CSS
           </WhiteText>

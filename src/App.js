@@ -1,6 +1,6 @@
 import "./App.css";
 import { Global, css } from "@emotion/react";
-import Card from "./Components/Card";
+import Card from "./components/Card";
 
 function App() {
   return (
@@ -21,9 +21,12 @@ function App() {
             color: #2797dd;
           }
           html,
-          body,
           #root {
             height: 100%;
+          }
+          body {
+            height: 100%;
+            background-color: black;
           }
         `}
       />
